@@ -5,9 +5,9 @@ const App = () => {
   return (
     <>
       <div className="bg-rose-500 pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Button>Something</Button>
+        <Button className="mt-10">Something</Button>
       </div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
       <ButtonGradient />
     </>
   );
