@@ -7,6 +7,7 @@ import { heroIcons } from "../constants";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import CompanyLogo from "./CompanyLogo";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -36,7 +37,7 @@ const Hero = () => {
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
               <div className="aspect-[33/40] md:aspect-[668/490] lg:aspect-[1024/490] overflow-hidden rounded-b-[0.9rem]">
-                <img src={robot} alt="AI" className="w-full scale-[1.7] md:scale-[1] -translate-y-[8%] md:-translate-y-[10%] lg:-translate-y-[23%]" width={1024} height={490} />
+                <img src={robot} alt="AI" className="w-full scale-[1.7] md:scale-[1] translate-y-[8%] md:-translate-y-[10%] lg:-translate-y-[23%]" width={1024} height={490} />
 
                 <Generating className="absolute left-4 md:left-1/2 right-4 md:right-auto bottom-5 md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
@@ -65,6 +66,8 @@ const Hero = () => {
 
           <BackgroundCircles />
         </div>
+
+        <CompanyLogo className="hidden lg:block relative z-10 mt-20" />
       </div>
 
       <BottomLine />
