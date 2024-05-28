@@ -1,9 +1,9 @@
-import { check, service1, service2 } from "../assets";
-import { brainwaveServices } from "../constants";
+import { check, service1, service2, service3 } from "../assets";
+import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
 import Section from "./Section";
-import { PhotoChatMessage } from "./design/Services";
+import { Gradient, PhotoChatMessage, VideoBar, VideoChatMessage } from "./design/Services";
 
 const Services = () => {
   return (
@@ -12,6 +12,7 @@ const Services = () => {
         <Heading title="Generating AI made for creators." text="Brainwave unlocks the pontetial of AI-powered applications" />
 
         <div className="bg-teal-500 relative">
+          {/* left */}
           <div className="bg-violet-600 relative z-1 flex items-center h-[39rem] xl:h-[46rem] mb-5 p-8 lg:p-20 border border-n-1/10 rounded-3xl overflow-hidden">
             <div className="bg-gray-600 absolute top-0 left-0 h-full w-full md:w-3/5 xl:w-auto pointer-events-none">
               <img src={service1} alt="Smartest AI" width={800} height={730} className="w-full h-full object-cover md:object-right" />
@@ -33,6 +34,7 @@ const Services = () => {
             <Generating className="absolute left-4 right-4 bottom-4 lg:left-1/2 lg:right-auto lg:bottom-8 lg:-translate-x-1/2 border border-n-1/10 md:w-[40rem]" />
           </div>
 
+          {/* right */}
           <div className="bg-amber-600 relative z-1 grid lg:grid-cols-2 gap-5">
             <div className="bg-teal-800 relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="bg-sky-500 absolute inset-0">
@@ -47,11 +49,32 @@ const Services = () => {
               <PhotoChatMessage />
             </div>
 
-            <div className="bg-violet-500 relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden grid lg:grid-rows-2 gap-3">
-              <div className="bg-gray-500">Andry</div>
-              <div className="bg-green-500">Ariadi</div>
+            <div className="bg-n-7 p-4 rounded-3xl overflow-hidden lg:min-h-[46rem]">
+              <div className="bg-gray-500 py-12 px-4 lg:px-8">
+                <h4 className="h4 mb-4">Video generation</h4>
+                <p className="body-2 text-n-3 mb-[2rem]">The world’s most powerful AI photo and video art generation engine. What will you create?</p>
+
+                <ul className="bg-teal-600 flex items-center justify-between">
+                  {brainwaveServicesIcons.map((item, index) => (
+                    <li key={index} className={`rounded-2xl flex items-center justify-center ${index === 2 ? "bg-conic-gradient w-[3rem] h-[3rem] md:w-[4.5rem] md:h-[4.5rem] p-0.25" : "bg-n-6 flex w-10 h-10 md:w-15 md:h-15"}`}>
+                      <div className={index === 2 ? "bg-n-7 flex items-center justify-center w-full h-full rounded-[1rem]" : ""}>
+                        <img src={item} alt={item} width={24} height={24} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-n-8 relative h-[20rem] md:h-[25rem] rounded-xl overflow-hidden">
+                <img src={service3} alt="Scary Robot" width={520} height={400} className="w-full h-full object-cover" />
+
+                <VideoChatMessage />
+                <VideoBar />
+              </div>
             </div>
           </div>
+
+          <Gradient />
         </div>
       </div>
     </Section>

@@ -7,10 +7,9 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 const Collaboration = () => {
   return (
     <Section crosses className="border-2 border-sky-500">
-      <div className="bg-amber-500 container lg:flex">
+      <div className="bg-amber-500 container md:flex md:gap-3">
         <div className="bg-teal-500 max-w-[23rem]">
           <h2 className="h2 mb-4 md:mb-8">AI Chat for seamless collaboration</h2>
-
           <ul className="bg-violet-500 max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
               <li key={item.id} className="mb-3 py-3">
@@ -23,13 +22,11 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-
           <Button>Try it now</Button>
         </div>
 
         <div className="bg-sky-500 lg:ml-auto xl:w-[38rem] mt-4">
           <p className="bg-violet-300 body-2 text-n-4 mb-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">{collabText}</p>
-
           <div className="bg-violet-500 relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 border border-n-6 aspect-square rounded-full m-auto">
               <div className="w-[6rem] border border-n-6 aspect-square rounded-full m-auto p-[0.2rem] bg-conic-gradient">
