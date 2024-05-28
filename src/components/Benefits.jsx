@@ -7,7 +7,7 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
-    <Section id="#features" className="border-4 border-teal-500">
+    <Section id="#features">
       <div className="bg-amber-500 container relative z-2">
         <Heading title="Chat Smarter, Not Harder with Brainwave" className="max-w-md lg:max-w-2xl" />
 
@@ -15,7 +15,7 @@ const Benefits = () => {
           {benefits.map((item) => (
             <div
               key={item.id}
-              className="bg-teal-500 block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[20rem] lg:max-w-[24rem]"
+              className="bg-teal-500 block relative p-0.5 bg-no-repeat bg-[length:100%_100%] max-w-[20rem] lg:max-w-[24rem]"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}

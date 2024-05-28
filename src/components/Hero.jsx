@@ -13,7 +13,7 @@ const Hero = () => {
   const parallaxRef = useRef(null);
 
   return (
-    <Section id="#hero" className="pt-[12rem] -mt-[5.25rem] border-4 border-red-700" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings>
+    <Section id="#hero" className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings>
       <div className="bg-teal-500 container relative border-4 border-green-700" ref={parallaxRef}>
         <div className="bg-sky-500 relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-6">
