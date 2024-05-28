@@ -2,7 +2,7 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
 import Section from "./Section";
-import { LeftLine, RightLine } from "../components/design/Pricing";
+import { LeftLine, RightLine } from "./design/Pricing";
 
 const Pricing = () => {
   return (
@@ -22,6 +22,12 @@ const Pricing = () => {
           <PricingList />
           <LeftLine />
           <RightLine />
+        </div>
+
+        <div className="flex justify-center mt-10">
+          <a href="/pricing" className="text-xs font-code font-bold uppercase tracking-wider border-b">
+            See the full details
+          </a>
         </div>
       </div>
     </Section>
