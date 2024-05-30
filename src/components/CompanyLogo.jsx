@@ -5,9 +5,9 @@ const CompanyLogo = ({ className }) => {
     <div className={className}>
       <h5 className="tagline text-center text-n-1/50 mb-6">Helping people create beautiful content at</h5>
 
-      <ul className="bg-teal-500 flex">
+      <ul className="flex">
         {companyLogos.map((logo, index) => (
-          <li key={index} className="bg-rose-500 flex flex-1 h-[8.5rem] justify-center items-center">
+          <li key={index} className="flex flex-1 h-[8.5rem] justify-center items-center">
             <img src={logo} alt={logo} width={120} height={40} />
           </li>
         ))}
