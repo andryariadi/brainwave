@@ -10,10 +10,10 @@ const Pricing = () => {
       <div className="container relative z-2">
         {/* Top */}
         <div className="relative hidden lg:flex justify-center mb-[6.5rem]">
-          <img src={smallSphere} alt="Sphere" width={255} height={255} className="relative z-1" />
+          <img src={smallSphere} alt="Sphere" width={255} height={255} className="relative z-1 transition-transform duration-500 ease-in-out hover:scale-105" />
 
           <div className="w-[60rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <img src={stars} alt="Start" width={950} height={400} className="w-full" />
+            <img src={stars} alt="Start" width={950} height={400} className="w-full transition-transform duration-500 ease-in-out hover:scale-105" />
           </div>
         </div>
 
@@ -26,11 +26,11 @@ const Pricing = () => {
           <RightLine />
         </div>
 
-        {/* <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10">
           <a href="/pricing" className="text-xs font-code font-bold uppercase tracking-wider border-b">
             See the full details
           </a>
-        </div> */}
+        </div>
       </div>
     </Section>
   );

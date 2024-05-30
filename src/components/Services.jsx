@@ -14,7 +14,7 @@ const Services = () => {
         {/* Bento Grid */}
         <div className="relative">
           {/* Top */}
-          <div className="relative z-1 flex items-center h-[39rem] xl:h-[46rem] mb-5 p-8 lg:p-20 border border-n-1/10 rounded-3xl overflow-hidden">
+          <div className="relative z-1 flex items-center h-[39rem] xl:h-[46rem] mb-5 p-8 lg:p-20 border border-n-1/10 rounded-3xl overflow-hidden transition-colors duration-500 ease-in-out hover:border-color-1">
             {/* Left */}
             <div className="absolute top-0 left-0 h-full w-full md:w-3/5 xl:w-auto pointer-events-none">
               <img src={service1} alt="Smartest AI" width={800} height={730} className="w-full h-full object-cover md:object-right" />
@@ -40,7 +40,7 @@ const Services = () => {
           {/* Bottom */}
           <div className="relative z-1 grid lg:grid-cols-2 gap-5">
             {/* Left */}
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
+            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden transition-colors duration-500 ease-in-out hover:border-color-1">
               <div className="absolute inset-0">
                 <img src={service2} alt="Robot" width={630} height={750} className="w-full h-full object-cover" />
               </div>
@@ -54,7 +54,7 @@ const Services = () => {
             </div>
 
             {/* Right */}
-            <div className="bg-n-7 p-4 rounded-3xl overflow-hidden lg:min-h-[46rem]">
+            <div className="bg-n-7 p-4 rounded-3xl overflow-hidden lg:min-h-[46rem] border transition-colors duration-500 ease-in-out hover:border-color-1">
               {/* Top */}
               <div className="py-12 px-4 lg:px-8">
                 <h4 className="h4 mb-4">Video generation</h4>

@@ -35,7 +35,7 @@ const Collaboration = () => {
             <div className="flex w-60 border border-n-6 aspect-square rounded-full m-auto">
               <div className="w-[6rem] border border-n-6 aspect-square rounded-full m-auto p-[0.2rem] bg-conic-gradient">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <img src={brainwaveSymbol} alt="Brainwave" width={48} height={48} />
+                  <img src={brainwaveSymbol} alt="Brainwave" width={48} height={48} className="transition-transform duration-500 ease-in-out hover:scale-105" />
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Collaboration = () => {
             <ul>
               {collabApps.map((app, index) => (
                 <li key={app.id} className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}>
-                  <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 rounded-xl border border-n-1/15 -rotate-${index * 45}`}>
+                  <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 rounded-xl border border-n-1/15 -rotate-${index * 45} transition-all duration-300 ease-in-out hover:scale-110 hover:border-color-1`}>
                     <img src={app.icon} alt={app.title} width={app.width} height={app.height} className="m-auto" />
                   </div>
                 </li>
